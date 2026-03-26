@@ -8,7 +8,7 @@ const Home = () => {
         <div className="w-full max-w-6xl mx-auto flex flex-col md:flex-row">
           <div className="w-full lg:w-1/2">
             <span className="border-2 bg-green-100 rounded-3xl px-2 border-green-300 text-green-500 py-1 flex w-72">
-              <img src="public/img/asset 12.svg" alt="" /> New Courses Available
+              <img src="src/assests/img/asset 12.svg" alt="" /> New Courses Available
             </span>
             <h1 className="text-5xl font-bold px-4">
               Master New Skills{" "}
@@ -40,15 +40,21 @@ const Home = () => {
             </div>
           </div>
           <div className="w-full lg:w-1/2 ">
-          <div className="relative  border-gray-300 rounded-3xl overflow-hidden shadow-2xl shadow-olive-800">
-            <img src="public/img/asset 0.jpeg" className="w-full h-full object-top" alt=""/>
-            .top
+          <div className=" border-gray-300 rounded-3xl  shadow-2xl shadow-olive-800 relative">
+            <img src="src/assests/img/asset 0.jpeg" className="w-full h-full object-top  rounded-3xl" alt=""/>
+            <div className="absolute -top-2 -right-2 border-2 px-8 rounded-2xl py-2 z-10 bg-white">roshan</div>
+            <div className="absolute -left-2 -bottom-2 border-2  border-gray-400 px-4 rounded-4xl py-2 z-10 bg-white flex items-center ">
+              <i className="ri-book-open-line text-green-500 text-3xl bg-green-100 p-2 rounded-4xl flex items-center text-[20px]"></i> 
+              <span className="px-3">
+                <p className="font-bold leading-3 text-[15px]">200 + Course</p>
+                <span className=" text-gray-400 text-[12px]">Available Now</span></span>
+                </div>
             </div>
           </div>  
         </div>
       </div>
 
-      {/* <div className="max-w-7xl  mx-auto grid grid-cols-1 md:grid-cols-4 gap-5 py-6">
+      <div className="max-w-7xl  mx-auto grid grid-cols-1 md:grid-cols-4 gap-5 py-6">
         {CardData &&
           CardData.map((data, index) => {
             return (
@@ -69,9 +75,9 @@ const Home = () => {
               </div>
             );
           })}
-      </div> */}
+      </div>
 
-      <div className="max-w-6xl mx-auto grid  md:grid-cols-4 gap-4">
+      {/* <div className="max-w-6xl mx-auto grid  md:grid-cols-4 gap-4">
         {CardData &&
           CardData.map((data, index) => {
             return (
@@ -92,7 +98,7 @@ const Home = () => {
               </div>
             );
           })}
-      </div>
+      </div> */}
     </>
   );
 };
